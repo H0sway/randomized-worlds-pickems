@@ -56,29 +56,31 @@ class Randomizer extends Component {
 
     return (
       <div className="randomizer">
-        <Button variant="outline-danger" onClick={this.randomizePicks}>RANDOM</Button>
+        <Button variant="danger" onClick={this.randomizePicks}>BLESS RNG</Button>
 
-        <Row>
-          <Col>
-            <h2>Group A</h2>
-            <GroupTable teams={groupA} />
-          </Col>
-          <Col>
-            <h2>Group B</h2>
-            <GroupTable teams={groupB} />
-          </Col>
-        </Row>
+        <div className="groups-container">
+          <Row>
+            <Col>
+              <h2>Group A</h2>
+              <GroupTable teams={groupA} />
+            </Col>
+            <Col>
+              <h2>Group B</h2>
+              <GroupTable teams={groupB} />
+            </Col>
+          </Row>
 
-        <Row>
-          <Col>
-            <h2>Group C</h2>
-            <GroupTable teams={groupC} />
-          </Col>
-          <Col>
-            <h2>Group D</h2>
-            <GroupTable teams={groupD} />
-          </Col>
-        </Row>
+          <Row>
+            <Col>
+              <h2>Group C</h2>
+              <GroupTable teams={groupC} />
+            </Col>
+            <Col>
+              <h2>Group D</h2>
+              <GroupTable teams={groupD} />
+            </Col>
+          </Row>
+        </div>
       </div>
     )
   }
