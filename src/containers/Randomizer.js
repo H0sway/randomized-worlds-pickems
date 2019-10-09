@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import GroupTable from '../components/GroupTable';
 
 class Randomizer extends Component {
   constructor() {
@@ -48,9 +52,33 @@ class Randomizer extends Component {
 
   render() {
     console.log(this.state);
+    const { groupA, groupB, groupC, groupD } = this.state;
+
     return (
       <div className="randomizer">
         <Button variant="outline-danger" onClick={this.randomizePicks}>RANDOM</Button>
+
+        <Row>
+          <Col>
+            <h2>Group A</h2>
+            <GroupTable teams={groupA} />
+          </Col>
+          <Col>
+            <h2>Group B</h2>
+            <GroupTable teams={groupB} />
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <h2>Group C</h2>
+            <GroupTable teams={groupC} />
+          </Col>
+          <Col>
+            <h2>Group D</h2>
+            <GroupTable teams={groupD} />
+          </Col>
+        </Row>
       </div>
     )
   }
