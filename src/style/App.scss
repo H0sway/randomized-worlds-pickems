@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Cardo&display=swap');
+@import "Randomizer";
+
+$black: #000000;
+$white: #ffffff;
+$light-yellow: #FFEA82;
+$dark-yellow: #B39C29;
+$purpleishIGuess: #4C47B3;
+
+$header-font: 'Cardo', serif;
+$content-font: 'Alegreya Sans', sans-serif;
+$league-font: 'Friz Quadrata';
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  background-color: $black;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.App {
+  padding-bottom: 2em;
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+h1 {
+  color: $light-yellow;
+  font-size: 4em;
+  font-family: $league-font;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: justify;
+  font-size: 1em;
+  font-family: $header-font;
+  color: $dark-yellow;
+  margin: 1em auto 0 auto;
+}
+
+.header {
+  width: 100%;
+  background-color: $black;
+  border-bottom: .1em solid $white;
+  padding: 2em;
+}
