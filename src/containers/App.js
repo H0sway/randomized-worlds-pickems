@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
 
-class App extends Component {
+import Randomizer from './Randomizer';
 
-  render() {
-    return (
-      <div className="App">
-        <h1>Randomize Your PickEm's!</h1>
-      </div>
-    )
-  }
+import Header from '../components/Header';
+
+const App = () => {
+  return (
+    <div className="App">
+      <Container>
+        <Header />
+
+        <Randomizer />
+      </Container>
+    </div>
+  )
 };
 
 export default App;
