@@ -1,0 +1,37 @@
+$black: #000000;
+$light-yellow: #FFEA82;
+$dark-yellow: #B39C29;
+$purpleishIGuess: #4C47B3;
+
+$header-font: 'Cardo', serif;
+$content-font: 'Alegreya Sans', sans-serif;
+$league-font: 'Friz Quadrata';
+
+button {
+  margin: 2em auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: $league-font;
+  margin-bottom: 1em;
+  text-align: center;
+  color: $light-yellow;
+}
+
+.list-group {
+  border-color: $light-yellow;
+  color: $dark-yellow;
+  font-family: $content-font;
+  margin-bottom: 1em;
+}
+
+.list-group-item {
+  border-color: $light-yellow;
+  background-color: $black;
+}
+
+.list-group-item:hover {
+  color: $light-yellow;
+}

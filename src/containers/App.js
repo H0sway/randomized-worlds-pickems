@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 
+import '../style/App.scss'
+
 import Randomizer from './Randomizer';
 
 import Header from '../components/Header';
