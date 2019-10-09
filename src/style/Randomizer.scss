@@ -9,27 +9,34 @@ $league-font: 'Friz Quadrata';
 
 button {
   margin: 2em auto;
+  font-family: $league-font;
   text-align: center;
 }
 
 h2 {
   font-size: 2em;
   font-family: $league-font;
-  margin-bottom: 1em;
+  margin-bottom: .6em;
   text-align: center;
   color: $light-yellow;
+}
+
+.groups-container {
+  padding: 2em;
+  background-color: #000000dd;
 }
 
 .list-group {
   border-color: $light-yellow;
   color: $dark-yellow;
   font-family: $content-font;
-  margin-bottom: 1em;
+  margin-bottom: 1.8em;
 }
 
 .list-group-item {
   border-color: $light-yellow;
   background-color: $black;
+  font-family: $league-font;
 }
 
 .list-group-item:hover {
