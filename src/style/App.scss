@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme|Archivo+Narrow|Source+Serif+Pro&display=swap');
 @import "Randomizer";
 
 $black: #000000;
@@ -7,8 +7,9 @@ $light-yellow: #FFEA82;
 $dark-yellow: #B39C29;
 $purpleishIGuess: #4C47B3;
 
-$header-font: 'Cardo', serif;
-$content-font: 'Alegreya Sans', sans-serif;
+$header-font: 'Source Serif Pro', serif;
+$content-font: 'Acme', sans-serif;
+$secondary-font: 'Archivo Narrow', sans-serif;
 $league-font: 'Friz Quadrata';
 
 body {
