@@ -48,6 +48,7 @@ class Randomizer extends Component {
       groupC: newC,
       groupD: newD,
     })
+    console.log('FREE HONG KONG!');
   }
 
   render() {
@@ -60,22 +61,22 @@ class Randomizer extends Component {
 
         <div className="groups-container">
           <Row>
-            <Col>
+            <Col xs={12} md={6}>
               <h2>Group A</h2>
               <GroupTable teams={groupA} />
             </Col>
-            <Col>
+            <Col xs={12} md={6}>
               <h2>Group B</h2>
               <GroupTable teams={groupB} />
             </Col>
           </Row>
 
           <Row>
-            <Col>
+            <Col xs={12} md={6}>
               <h2>Group C</h2>
               <GroupTable teams={groupC} />
             </Col>
-            <Col>
+            <Col xs={12} md={6}>
               <h2>Group D</h2>
               <GroupTable teams={groupD} />
             </Col>

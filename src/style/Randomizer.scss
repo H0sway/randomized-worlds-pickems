@@ -34,6 +34,8 @@ h2 {
 }
 
 .list-group-item {
+  line-height: 100%;
+  text-align: left;
   border-color: $light-yellow;
   background-color: $black;
   font-family: $league-font;
@@ -41,4 +43,10 @@ h2 {
 
 .list-group-item:hover {
   color: $light-yellow;
+}
+
+@media (max-width: 767px) {
+  .list-group-item {
+    padding-left: .4em;
+  }
 }
